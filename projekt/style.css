@@ -7,14 +7,14 @@
 }
 
 .img {
-	width: 250px;
-	height: 350px;
+	width: 300px;
+	height: 250px;
 }
 
 button {
 	color: rgb(0, 0, 0);
-	outline-width: 200px;
-	background-color: var(--background1);
+	outline-width: 300px;
+	background-color: var(--background2);
 	outline-color: none;
 	border: none;
 }
@@ -22,9 +22,10 @@ button {
 .cart {
 	color: rgb(0, 0, 0);
 	outline-width: 200px;
-	background-color: var(--background3);
+	background-color: 0;
 	outline-color: none;
 	border: none;
+	box-shadow: 0 0 30px rgb(255, 255, 255);
 }
 
 .back {
@@ -41,13 +42,15 @@ button {
 	display: inline-block;
 }
 
+.capBox{}
+
 .cardMain {
 	display: flex;
 	box-shadow: rgb(114, 112, 112);
 }
 
 .card {
-	box-shadow: 0 0 10px gray;
+	box-shadow: 0 0 15px gray;
 	/* width: 800px; */
 	box-shadow: rgb(124, 120, 120);
 	transition: all 0.5s;
@@ -63,12 +66,15 @@ button {
 
 .cardsBox {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 5fr);
 	gap: 40px 100px;
 	max-width: 1360px;
 	margin: 0 auto;
 }
 
-.form {
-	color: coral;
+.capBox{
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 30px rgb(255, 255, 255);
+	text-align: center;
+	outline-width: 200px;
 }
