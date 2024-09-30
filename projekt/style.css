@@ -1,10 +1,11 @@
 :root {
-	--background1: rgb(254, 195, 255);
-	--background2: rgba(157, 129, 255, 1);
-	--background3: rgba(0, 255, 226, 1);
-    --background4:background: rgb(254,195,255);
-    background: linear-gradient(90deg, rgba(254,195,255,1) 0%, rgba(157,129,255,1) 50%, rgba(0,255,226,1) 100%);
-}
+	--background1: rgba(255,139,190,1);
+	--background2: rgb(255, 255, 255);
+	--background3: rgba(138,255,254,1);
+    --background4:background: rgb(255,139,190);
+	background: radial-gradient(circle, rgba(255,139,190,1) 0%, rgba(138,255,254,1) 100%);
+	--background5: background: rgb(255,139,190);
+	background: linear-gradient(0deg, rgba(255,139,190,1) 0%, rgba(138,255,254,1) 100%);
 
 .img {
 	width: 300px;
@@ -14,7 +15,7 @@
 button {
 	color: rgb(0, 0, 0);
 	outline-width: 300px;
-	background-color: var(--background2);
+	background-color: var(--background1);
 	outline-color: none;
 	border: none;
 }
@@ -66,26 +67,35 @@ button {
 	display: grid;
 	grid-template-columns: repeat(2, 5fr);
 	gap: 40px 100px;
+	min-width: none;
 	max-width: 1360px;
 	margin: 0 auto;
+	margin-top: 6%;
 }
 
 .capBox{
 	position: fixed;
 	z-index: 10000;
-	width: 50%;
+	width: 100%;
 	top: 5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: rgb(255, 255, 255);
-	box-shadow: 0 0 30px rgb(255, 255, 255);
+	background-color: var( --background1);
+	box-shadow: 0 0 10px var( --background3);
 	text-align: center;
 
 }
 
 .kids{
-	background-color: rgb(255, 255, 255);
-	box-shadow: 0 0 30px rgb(255, 255, 255);
+	background-color:  var( --background1);
+	box-shadow: 0 0 10px  var( --background3);
 	text-align: center;
 	left: 50%;
+	
+}
+
+@media screen {
+	.capBox{
+
+	}
 }
