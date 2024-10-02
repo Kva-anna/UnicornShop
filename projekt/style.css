@@ -81,21 +81,33 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: var( --background1);
-	box-shadow: 0 0 10px var( --background3);
+	box-shadow: 10% var( --background3);
 	text-align: center;
 
 }
 
 .kids{
 	background-color:  var( --background1);
-	box-shadow: 0 0 10px  var( --background3);
+	box-shadow: 10%  var( --background3);
 	text-align: center;
-	left: 50%;
-	
+	/* min-width: none; */
+	max-width: 1360px;
+	/* left: 50%; */
+	top: 50%;
 }
 
-@media screen {
+@media(max-width : 992px) {
 	.capBox{
+
+	}
+}
+@media(max-width : 768px){
+	{
+
+	}
+}
+@media(max-width : 500px){
+	{
 
 	}
 }
