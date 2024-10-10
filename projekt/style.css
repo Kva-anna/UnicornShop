@@ -12,7 +12,9 @@
 	height: 250px;
 }
 
-button {
+.
+
+.cart {
 	color: rgb(0, 0, 0);
 	outline-width: 300px;
 	background-color: var(--background1);
@@ -59,7 +61,7 @@ button {
 	transform: scale(1.1);
 }
 
-.dolors {
+.price {
 	color: burlywood;
 }
 
